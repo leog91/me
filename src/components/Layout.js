@@ -23,6 +23,7 @@ const TemplateWrapper = ({ children }) => {
     color: #fff; */
     background-color: #e8dbe9;
     color: #611f69;
+    /* b style */
   `;
 
   return (

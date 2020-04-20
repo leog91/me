@@ -9,18 +9,30 @@ const NavItem = styled.div`
   margin: auto;
   padding: 5px;
   font-size: 25px;
-  font-weight: 400;
+  font-size: 20px;
+
+  color: #8c8c8c;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   :hover {
-    background-color: #ecd0ac;
+    /* background-color: grey; */
+    /* b style */
+    color: #8c8c8c;
     border-radius: 10px;
+  }
+  a:hover {
+    color: #b2b2b2 !important;
   }
   a:link {
     text-decoration: none;
     color: #611f69;
+    /* b style  */
+    /* color: #fff; */
   }
   a:visited {
     /* var */
-    color: #611f69;
+    color: #fff;
+    /* color: #fff; */
   }
 `;
 
@@ -33,6 +45,11 @@ const NavbarStyles = styled.div`
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   /* background-color: #e67709; */
   background-color: #faebd7;
+  /* b style  */
+  background-color: black;
+
+  /* color red => #cb1a1a */
+
   padding: 3px;
   display: flex;
   border: 5px;
@@ -61,7 +78,7 @@ export const Navbar = () => {
             <Link to="/blog">Blog</Link>
           </NavItem>
         </NavbarStyles>
-        <Line />
+        {/* <Line /> */}
       </nav>
     </div>
   );
