@@ -24,6 +24,10 @@ const TemplateWrapper = ({ children }) => {
     background-color: #e8dbe9;
     color: #611f69;
     /* b style */
+    background-color: #fff;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
   `;
 
   return (
