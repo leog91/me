@@ -25,7 +25,8 @@ const NavItem = styled.div`
   }
   a:link {
     text-decoration: none;
-    color: #611f69;
+    /* color: #611f69; */
+    color: #000;
     /* b style  */
     /* color: #fff; */
   }
