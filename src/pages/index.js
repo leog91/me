@@ -3,19 +3,9 @@ import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
 import Layout from "../components/Layout";
 import styled from "styled-components";
-
-const Title = styled.div`
-  font-weight: 700;
-  font-size: 24px;
-  margin: 15px 0px 10px 0px;
-`;
-
-const Content = styled.div`
-  margin: 0px 20px 0px 20px;
-  margin: 0px 72px;
-  padding-left: 15px;
-  padding-right: 15px;
-`;
+// import Content from "../components/presentational/Content";
+// import Title from "../components/presentational/Title";
+import { Content, Title } from "../components/presentational/index";
 
 const getImages = graphql`
   {
@@ -31,7 +21,6 @@ const getImages = graphql`
 
 const Index = () => {
   const data = useStaticQuery(getImages);
-  console.log(data);
 
   return (
     <Layout>

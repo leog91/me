@@ -8,27 +8,27 @@ import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import styled from "styled-components";
 
+const LayoutStyles = styled.div`
+  /* background-color: #f7c492; */
+  background-color: #202020;
+  color: #b3b9c5;
+  margin: 0;
+  /* color: #ffd479; title ?*/
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* background-color: #d64b3e;
+    color: #fff; */
+  background-color: #e8dbe9;
+  color: #611f69;
+  /* b style */
+  background-color: #fff;
+  color: #000;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+`;
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
-
-  const LayoutStyles = styled.div`
-    /* background-color: #f7c492; */
-    background-color: #202020;
-    color: #b3b9c5;
-    margin: 0;
-    /* color: #ffd479; title ?*/
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    /* background-color: #d64b3e;
-    color: #fff; */
-    background-color: #e8dbe9;
-    color: #611f69;
-    /* b style */
-    background-color: #fff;
-    color: #000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-  `;
 
   return (
     <LayoutStyles>
