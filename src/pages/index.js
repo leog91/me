@@ -11,7 +11,7 @@ const getImages = graphql`
   {
     file(relativePath: { eq: "DSC05355-1-3.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 900, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG
         }
       }

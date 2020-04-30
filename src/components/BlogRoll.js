@@ -6,9 +6,15 @@ import styled from "styled-components";
 import { Title } from "../components/presentational/index";
 
 const BlogRollStyles = styled.div`
-  /* background-color: grey; */
   margin-top: 10px;
-  border-radius: 13px;
+  border-top: 2px solid #ebebeb;
+  a:link {
+    text-decoration: none;
+    color: #454343;
+  }
+  a:visited {
+    color: #454343;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -19,7 +25,8 @@ const SlugAndDate = styled.header`
   display: flex;
   span:last-child {
     margin-left: auto;
-    padding: 10px;
+    padding: 5px;
+    font-size: 14px;
   }
 `;
 
@@ -74,7 +81,6 @@ class BlogRoll extends React.Component {
                   </Link> */}
                 </p>
               </article>
-              <hr />
             </BlogRollStyles>
           ))}
       </div>
@@ -112,7 +118,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 480, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

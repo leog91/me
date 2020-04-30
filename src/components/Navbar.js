@@ -72,9 +72,9 @@ export const Navbar = () => {
           <NavItem>
             <Link to="/about">Abssout</Link>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <Link to="/products">Prodwdducts</Link>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <Link to="/blog">Blog</Link>
           </NavItem>
