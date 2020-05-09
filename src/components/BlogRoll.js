@@ -18,7 +18,7 @@ const BlogRollStyles = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  padding: 25px;
+  padding: 2px;
 `;
 
 const SlugAndDate = styled.header`

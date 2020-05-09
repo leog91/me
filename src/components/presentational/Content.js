@@ -6,11 +6,14 @@ const Content = styled.div`
   padding-left: 15px;
   padding-right: 15px;
   max-width: 80vw;
+  max-width: 800px;
+  margin: auto;
+  text-align: justify;
   @media (max-width: 768px) {
     max-width: 100vw;
     margin: 0px 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 `;
 
