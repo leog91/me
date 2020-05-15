@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Image from "gatsby-image";
 import Layout from "../components/Layout";
-import styled from "styled-components";
+
 // import Content from "../components/presentational/Content";
 // import Title from "../components/presentational/Title";
 import { Content, Title } from "../components/presentational/index";

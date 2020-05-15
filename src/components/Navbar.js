@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
@@ -37,10 +37,10 @@ const NavItem = styled.div`
   }
 `;
 
-const Line = styled.div`
-  height: 5px;
-  background-color: black;
-`;
+// const Line = styled.div`
+//   height: 5px;
+//   background-color: black;
+// `;
 const NavbarStyles = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
